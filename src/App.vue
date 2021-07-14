@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <CrudVue>
+    <CrudVue/>
   </div>
 </template>
 
