@@ -115,7 +115,15 @@ export default {
             this.parkService.save(this.park).then(data => {
                 if(data.status === 200) {
                     this.displayModal = false;
-                    this.park = null;
+                    this.park = {
+                        name : null,
+                        description : null,
+                        openingDate : null,
+                        province : null,
+                        canton : null,
+                        district : null,
+                        address : null
+                    };
                     this.getAll();
                 }
             })
